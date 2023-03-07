@@ -2,8 +2,8 @@ package com.bridgelabz.generics;
 
 public class Generics {
 
-  public Float maximum(Float a, Float b, Float c){
-      Float max = a;
+  public String maximum(String a, String b, String c){
+      String max = a;
 
       if(b.compareTo(a) > 0){
           max = b;

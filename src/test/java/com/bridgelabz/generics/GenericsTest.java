@@ -7,21 +7,22 @@ import static org.junit.jupiter.api.Assertions.*;
 class GenericsTest {
 
     @Test
-    void floatTestCase1() {
+    void stringTestCase1() {
         Generics runner = new Generics();
-        float output = runner.maximum(12.3f,2.1f,9.3f); // max float at first position.
-        assertEquals(12.3f,output);
+        String output = runner.maximum("pqr","abc","lmn"); // maximum String at position1.
+        assertEquals("pqr",output);
     }
     @Test
-    void floatTestCase2() {
+    void stringTestCase2() {
         Generics runner = new Generics();
-        float output = runner.maximum(14.2f,27.9f,7.2f); // max float at second position.
-        assertEquals(27.9f,output);
+        String output = runner.maximum("cat","dog","mouse");// maximum String at position2.
+        assertEquals("dog",output);
     }
     @Test
-    void floatTestCase3() {
+    void stringTestCase3() {
         Generics runner = new Generics();
-        float output = runner.maximum(11.7f,4.2f,18.5f); // max float at third positon.
-        assertEquals(18.5f,output);
+        String output = runner.maximum("bike","Scooter","car");// maximum String at position3.
+        assertEquals("car",output);
+
     }
 }
