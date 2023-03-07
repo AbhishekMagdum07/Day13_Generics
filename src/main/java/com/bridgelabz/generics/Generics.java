@@ -2,8 +2,8 @@ package com.bridgelabz.generics;
 
 public class Generics {
 
-  public Integer maxInt(Integer a, Integer b, Integer c){
-      Integer max = a;
+  public Float maximum(Float a, Float b, Float c){
+      Float max = a;
 
       if(b.compareTo(a) > 0){
           max = b;

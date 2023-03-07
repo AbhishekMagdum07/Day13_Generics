@@ -5,22 +5,23 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class GenericsTest {
+
     @Test
-    void IntegerTestCase1() {
+    void floatTestCase1() {
         Generics runner = new Generics();
-        int output = runner.maxInt(7,5,3); // max number at 1st position
-        assertEquals(7,output);
+        float output = runner.maximum(12.3f,2.1f,9.3f); // max float at first position.
+        assertEquals(12.3f,output);
     }
     @Test
-    void IntegerTestCase2() {
+    void floatTestCase2() {
         Generics runner = new Generics();
-        int output = runner.maxInt(4,8,3); // max number at 2nd postion
-        assertEquals(8,output);
+        float output = runner.maximum(14.2f,27.9f,7.2f); // max float at second position.
+        assertEquals(27.9f,output);
     }
     @Test
-    void IntegerTestCase3() {
+    void floatTestCase3() {
         Generics runner = new Generics();
-        int output = runner.maxInt(7,2,9); // max number at 3rd position
-        assertEquals(9,output);
+        float output = runner.maximum(11.7f,4.2f,18.5f); // max float at third positon.
+        assertEquals(18.5f,output);
     }
 }
